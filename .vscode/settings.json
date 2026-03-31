@@ -1,3 +1,21 @@
 {
-    "livePreview.defaultPreviewPath": "/The-Melanin-Institute/index.html"
+  "cSpell.words": ["inclusivity","transformative"],
+  "cSpell.language": "en,en-US",
+  "css.lint.fontFaceProperties": "ignore",
+  "css.validate": false,
+  "files.exclude": {
+    "**/__MACOSX": true,
+    "**/__MACOSX/**": true,
+    "**/.DS_Store": true,
+    "**/.DS_Store?": true,
+    "**/._*": true
+  },
+  "search.exclude": {
+    "**/__MACOSX": true,
+    "**/__MACOSX/**": true,
+    "**/.git": true
+  },
+  "files.watcherExclude": {
+    "**/__MACOSX/**": true
+  }
 }
