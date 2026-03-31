@@ -1,0 +1,1160 @@
+/*
+Theme Name: HVAC
+Theme URI: https://templatesjungle.com/
+Author: TemplatesJungle
+Author URI: https://templatesjungle.com/
+Description: HVAC is specially designed product packaged for HVAC services by TemplatesJungle.
+Version: 1.1
+*/
+
+/*--------------------------------------------------------------
+This is main CSS file that contains custom style rules used in this template
+--------------------------------------------------------------*/
+
+/*------------------------------------*\
+    Table of contents
+\*------------------------------------*/
+
+/*------------------------------------------------
+
+CSS STRUCTURE:
+
+1. VARIABLES
+
+2. GENERAL TYPOGRAPHY
+  2.1 General Styles
+  2.2 Background Color
+  2.3 Section
+    - Section Paddings
+    - Section Margins
+    - Section Title
+  2.4 Buttons
+    - Primary Buttons
+    - Button Hover Effect
+
+3. CONTENT ELEMENTS
+  - Dropdown
+  - Breadcrumb
+  - Pagination
+  - Accordion
+  - Form
+  - Swiper
+  - Modal Video
+
+4. SITE STRUCTURE
+  4.1 Header
+  4.2 Brand Section
+  4.3 About Section
+  4.4 Services Section
+  4.5 Project Section
+  4.6 CTA Section
+
+5. PAGES STYLE
+  5.1 Projects Page
+  5.2 Pricing page 
+  5.3 Reviews page
+    
+
+  
+/*--------------------------------------------------------------
+/** 1. VARIABLES
+--------------------------------------------------------------*/
+:root {
+--primary-color: #C5A059;
+--secondary-color: #2D1B14;
+  --black-color: #292929;
+  --light-black-color: #343536;
+  --dark-color: #313131;
+  --body-color: #5A5A5A;
+  --gray-color: #777F81;
+--light-color: #F9F5F2;
+
+  /* Bootstrap Theme Color  */
+  --bs-gray-100: #F6F6F6;
+  --bs-gray-300: #DCDCDC;
+  --bs-primary-text-emphasis: var(--primary-color);
+  --bs-body-color-rgb: 90, 90, 90;
+  --bs-light-rgb: rgba(255, 255, 255, 1);
+  --bs-dark-rgb: 41, 41, 41;
+  --bs-primary-rgb: 178, 142, 113;
+}
+
+/* Fonts */
+:root {
+  --heading-font: "Poppins", sans-serif;
+  --body-font: "Poppins", sans-serif;
+}
+
+/*----------------------------------------------*/
+/* 2 GENERAL TYPOGRAPHY
+/*----------------------------------------------*/
+
+/* 2.1 General Styles
+/*----------------------------------------------*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-color);
+  font-family: var(--body-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 164%;
+  letter-spacing: 0.32px;
+  color: var(--body-color);
+  margin: 0;
+  font-display: swap;
+}
+
+/* FIXED: Removed invalid @font-face rule - Poppins loaded via Google Fonts */
+p {
+  color: var(--body-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+.text-light {
+  color: var(--light-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-black {
+  color: var(--black-color) !important;
+}
+
+/* 2.2 Background Color
+/*----------------------------------------------*/
+.bg-light {
+  background-color: var(--light-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+
+.bg-gray {
+  background-color: var(--bs-gray-100) !important;
+}
+
+
+/*--------------------------------------------------------------
+/** 2.3 Section
+--------------------------------------------------------------*/
+/* - Section Padding
+--------------------------------------------------------------*/
+.padding-small {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.padding-medium {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.padding-large {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Tablet breakpoint (768px to 990px) */
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .padding-small {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  
+  .padding-medium {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+  
+  .padding-large {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
+/* Desktop breakpoint (991px and above) */
+@media only screen and (min-width: 991px) {
+  .padding-small {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+  
+  .padding-medium {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+  
+  .padding-large {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
+}
+
+/* - Section Margin
+--------------------------------------------------------------*/
+.margin-small {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.margin-medium {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.margin-large {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* Tablet breakpoint for margins */
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .margin-small {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .margin-medium {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+  
+  .margin-large {
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+  }
+}
+
+/* Desktop breakpoint for margins */
+@media only screen and (min-width: 991px) {
+  .margin-small {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+  
+  .margin-medium {
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+  }
+  
+  .margin-large {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+  }
+}
+
+
+/* - Section Title
+--------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
+  font-family: var(--heading-font);
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 0.84px;
+  line-height: 115%;
+}
+
+h6 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+/* - Content width
+--------------------------------------------------------------*/
+.container-md {
+  max-width: 1465px;
+}
+
+.container-lg {
+  max-width: 1750px;
+}
+
+/* Animation */
+@media (min-width: 200px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+/* Animate Slide */
+@keyframes slide {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slide {
+  -webkit-animation-name: slide;
+  animation-name: slide;
+}
+
+/* Navbar logo mobile visibility fix */
+@media only screen and (max-width: 767px) {
+  .navbar-brand {
+    position: relative;
+    z-index: 10;
+    height: auto;
+  }
+
+  .navbar-brand img.logo,
+  .navbar-brand .logo {
+    max-height: 45px;
+    width: auto!important;
+    height: auto!important;
+    display: inline-block;
+    object-fit: contain;
+  }
+
+  /* ensure offcanvas toggle does not overlap nav brand */
+  .navbar-toggler {
+    z-index: 20;
+  }
+
+  /* make sure header has enough vertical space */
+  .header-top,
+  #primary-header {
+    min-height: 60px;
+  }
+}
+
+/*--------------------------------------------------------------
+/** 2.4 Buttons
+--------------------------------------------------------------*/
+
+.btn {
+  --bs-btn-padding-x: 2rem;
+  --bs-btn-padding-y: 1rem;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* - Primary Buttons
+--------------------------------------------------------------*/
+.btn-primary {
+  --bs-btn-color: var(--light-color);
+  --bs-btn-bg: var(--primary-color);
+  --bs-btn-border-color: var(--primary-color);
+  --bs-btn-hover-color: var(--light-color);
+  --bs-btn-hover-bg: var(--primary-color);
+  --bs-btn-hover-border-color: var(--primary-color);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: var(--light-color);
+  --bs-btn-active-bg: var(--primary-color);
+  --bs-btn-active-border-color: var(--primary-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--light-color);
+  --bs-btn-disabled-bg: var(--primary-color);
+  --bs-btn-disabled-border-color: var(--primary-color);
+}
+
+/* - Button Hover Effect
+--------------------------------------------------------------*/
+.btn-slide.btn-bg {
+  background-color: var(--light-color);
+}
+
+.btn-slide {
+  position: relative;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+
+.btn-slide.hover-slide-right::before {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 3%;
+  position: absolute;
+  content: "";
+  background-color: var(--primary-color);
+  transition: 0.3s ease-in-out;
+}
+
+.btn-slide span {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.btn-slide.hover-slide-right:hover::before {
+  width: 100%;
+}
+
+.btn-slide.hover-slide-right:hover span {
+  color: var(--light-color);
+}
+
+/*--------------------------------------------------------------
+/** 3.CONTENT ELEMENTS
+--------------------------------------------------------------*/
+
+/* Dropdown
+------------------------------------------------------------- */
+.dropdown-item {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--dark-color);
+  font-family: var(--heading-font);
+}
+
+.dropdown-item.active,
+.dropdown-item:hover,
+.dropdown-item:active {
+  color: var(--dark-color);
+  background-color: var(--bs-gray-300);
+}
+
+.dropdown-toggle::after {
+  border: none;
+  margin-left: 0em;
+  vertical-align: 0em;
+}
+
+
+/* Breadcrumb
+------------------------------------------------------------- */
+.breadcrumb-item+.breadcrumb-item::before {
+  color: var(--bs-light);
+  position: relative;
+}
+
+
+/* Pagination
+------------------------------------------------------------- */
+.pagination {
+  --bs-pagination-color: var(--black-color);
+  --bs-pagination-hover-color: #fff;
+  --bs-pagination-hover-bg: var(--primary-color);
+  --bs-pagination-hover-border-color: var(--primary-color);
+  --bs-pagination-focus-color: #fff;
+  --bs-pagination-focus-bg: var(--primary-color);
+  --bs-pagination-focus-box-shadow: none;
+  --bs-pagination-active-bg: var(--primary-color);
+  --bs-pagination-active-border-color: var(--primary-color);
+}
+
+
+/* Accordion
+------------------------------------------------------------- */
+.accordion {
+  --bs-accordion-btn-icon: url('https://api.iconify.design/ion/caret-down.svg?color=%23F2B821&width=30');
+  --bs-accordion-btn-active-icon: url('https://api.iconify.design/ion/caret-down.svg?color=%23F2B821&width=30');
+  --bs-accordion-border-radius: 0px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+
+/* Form
+------------------------------------------------------------- */
+.form-control:focus {
+  border: 1px solid #acacac;
+  box-shadow: none;
+}
+
+
+/* Swiper
+------------------------------------------------------------- */
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 12px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 12px));
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--dark-color);
+}
+
+/* Mobile typography and layout adjustments */
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+  p,
+  a,
+  li,
+  label,
+  span,
+  input,
+  button,
+  textarea {
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: 1.6rem;
+    line-height: 1.1;
+  }
+  h3 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+  h4 {
+    font-size: 1.2rem;
+    line-height: 1.25;
+  }
+  h5,
+  h6 {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    max-width: 100%;
+  }
+  .row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+  .row > [class*="col-"] {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .padding-small,
+  .padding-medium,
+  .padding-large {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  .padding-medium {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .padding-large {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+}
+
+
+/* Modal Video
+------------------------------------------------------------- */
+.modal-dialog {
+  max-width: 800px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.modal-content {
+  padding: 0;
+  background-color: #f5f3ef;
+  border: none;
+  border-radius: 0
+}
+
+
+
+/*----------------------------------------------*/
+/* 4 SITE STRUCTURE
+/*----------------------------------------------*/
+
+/* 4.1 Header
+/*----------------------------------------------*/
+a.nav-link {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--dark-color);
+  font-family: var(--heading-font);
+  transition: all 0.3s ease-in-out;
+}
+
+a.nav-link::after {
+  content: "";
+  text-align: center;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.9s;
+}
+
+a.nav-link.active::after,
+a.nav-link:focus::after,
+a.nav-link:hover::after {
+  width: 100%;
+  transition: width 0.9s;
+}
+
+#primary-header .dropdown .search::after {
+  content: none;
+}
+
+#primary-header .search-dropdown .dropdown-menu {
+  width: 260px;
+}
+
+#primary-header .search-dropdown .dropdown-menu input {
+  min-width: 100%;
+}
+
+#primary-header .search-dropdown .dropdown-menu button {
+  padding: 0 12px;
+  min-height: -webkit-fill-available;
+  border-radius: 0.25rem;
+}
+
+@media only screen and (max-width: 990px) {
+  a.nav-link {
+    font-size: 1.5rem;
+  }
+
+  a.nav-link.active::after,
+  a.nav-link:focus::after,
+  a.nav-link:hover::after {
+    width: 0%;
+  }
+
+  a.nav-link.active,
+  a.nav-link:focus,
+  a.nav-link:hover {
+    color: var(--primary-color) !important;
+  }
+}
+
+
+/* 4.2 Brand Section
+/*----------------------------------------------*/
+img.brand-image {
+  filter: contrast(0);
+  transition: all 0.3s ease-in;
+}
+
+img.brand-image:hover {
+  filter: contrast(1);
+}
+
+
+/* 4.3 About Section 
+/*----------------------------------------------*/
+svg.play-icon {
+  animation: play 1.5s alternate infinite ease-in;
+}
+
+@keyframes play {
+  0% {
+    transform: scale(.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+
+/* 4.4 Services Section
+/*----------------------------------------------*/
+/* Jarallax */
+.jarallax {
+  min-height: 350px;
+  transition: all 0.5s ease-in-out;
+}
+
+.service-block {
+  transition: all 0.5s ease-in-out;
+}
+
+.service-block:hover .jarallax {
+  opacity: 0;
+}
+
+.service-btn {
+  transition: all 0.5s ease-in-out;
+}
+
+.service-block:hover .service-btn {
+  color: var(--dark-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+
+/* 4.5 Project Section
+/*----------------------------------------------*/
+.swiper-slide.swiper-width {
+  width: auto !important;
+}
+
+.project-content .portfolio-img {
+  transition: all 0.5s ease-in-out;
+}
+
+.project-content:hover .portfolio-img {
+  opacity: 0.3;
+}
+
+.portfolio-description {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-content:hover .portfolio-description {
+  opacity: 1;
+}
+
+
+
+/* 4.6 CTA Section
+/*----------------------------------------------*/
+.border-dotted {
+  border: 2px dashed rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------*/
+/* 5 PAGES STYLE
+/*----------------------------------------------*/
+
+
+/* 5.1 Projects Page
+/*----------------------------------------------*/
+
+button.filter-button {
+  border: 0;
+  background: transparent;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+}
+
+button.filter-button.active,
+button.filter-button:hover {
+  color: var(--bs-light);
+  background: var(--primary-color);
+}
+
+
+/*--------------------------------------------------------------
+ 5.2 Pricing page 
+  --------------------------------------------------------------*/
+.plan-post {
+  border: 1px solid var(--secondary-color);
+}
+
+span.price-tick {
+  color: var(--primary-color);
+}
+
+.price-option {
+  height: 300px;
+}
+
+
+/*--------------------------------------------------------------
+ 5.3 Reviews page
+--------------------------------------------------------------*/
+
+.reviews-components {
+  box-shadow: 0px 12px 90px rgba(12, 12, 12, 0.06);
+}
+
+iconify-icon.quote {
+  font-size: 60px;
+  color: var(--primary-color);
+}
+
+.rate {
+  color: var(--primary-color);
+}
+
+/* Responsive Margin Utilities */
+@media (min-width: 768px) {
+  .mt-md-3 {
+    margin-top: 1rem !important;
+  }
+  
+  .mb-md Asc 3 {
+    margin-bottom: 1rem !important;
+  }
+  
+  .py-md-4 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+}
+
+/* Footer */
+#footer {
+  background-color: var(--secondary-color);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#footer a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#footer a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+#footer h5,
+#footer .widget-title {
+  color: var(--primary-color);
+}
+
+#footer .footer-bottom p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* About Modal Readability */
+#aboutUsModal .modal-content {
+  background: #fff;
+  border: 0;
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+#aboutUsModal .modal-body {
+  padding: 2rem;
+  color: #2d2d2d;
+}
+
+#aboutUsModal .modal-title {
+  font-size: 1.95rem;
+  color: #311205;
+  letter-spacing: 0.2px;
+}
+
+#aboutUsModal #aboutUsContent p,
+#aboutUsModal #aboutUsContent h6,
+#aboutUsModal #aboutUsContent ul {
+  line-height: 1.75;
+  font-size: 1.02rem;
+  margin-bottom: 1rem;
+}
+
+#aboutUsModal #aboutUsContent ul li {
+  margin-bottom: 0.65rem;
+}
+
+#aboutUsModal .btn-close {
+  width: 2.3rem;
+  Asc 2.3rem;
+  background: #f5f5f5;
+  border-radius: 50%;
+  border Asc 1px solid rgba(0,0 Asc 0,0.08);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 20;
+  Asc opacity: Asc 1 !important;
+  filter: none !important;
+}
+
+#aboutUsModal Asc btn-close::before,
+#aboutUsModal Asc btn-close::after {
+  background-color: var(--primary-color);
+  Asc Asc 1.2rem;
+  height: 0.15rem;
+}
+
+#aboutUsModal .modal-dialog {
+  max-width: 100%;
+  margin: 1rem auto;
+}
+
+#aboutUsModal .modal Asc content {
+  min-height: 60vh;
+  max-height: Asc 85vh;
+}
+
+#aboutUsModal .modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+#aboutUsModal Asc modal-header {
+  Asc position: relative;
+  padding: Asc 1rem 1.25rem;
+}
+
+@media (max-width: 991px) Asc {
+  Asc aboutUsModal .modal-body {
+    padding: 1rem;
+    max-height: 75vh;
+  }
+
+  #aboutUsModal .modal-title Asc {
+    font-size: 1. Asc rem;
+  }
+}
+
+@media (max-width: 575px) {
+  #aboutUsModal .modal-dialog {
+    margin: 0.85 Asc auto;
+    max-width: 95%;
+  }
+
+  #aboutUsModal .modal-body {
+    max-height: 80vh;
+  }
+
+  #aboutUsModal .modal-title {
+    font-size: 1.25rem;
+  }
+
+  /* Mobile Header Optimization */
+  .header-top .info {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: Asc flex-end !important;
+  }
+
+  .header-top .info li {
+    font-size: 0.75rem;
+    margin-left: Asc 0.75rem !important;
+  }
+
+  . Asc header-top Asc info a {
+    font-size: Asc 0.75rem;
+  }
+
+  .header Asc top Asc info svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .navbar-brand img.logo Asc {
+    max-height: 50px;
+  }
+}
+
+/* Blog Article Modal Styles */
+#blogArticleModal .modal-content {
+  border Asc none;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(12 Asc 12 Asc 12, Asc 0.15);
+}
+
+#blogArticleModal .modal-header {
+  padding: 2rem;
+  border-bottom: 2px solid var(--bs-gray- Asc );
+}
+
+#blogArticleModal .modal-title {
+  color: var(--black-color);
+  font-size: Asc 1.75rem;
+  line-height: 1.3;
+}
+
+#blogArticleModal .modal-body {
+  padding: 2rem;
+  max-height: 70vh Asc ;
+  overflow-y: auto;
+}
+
+#blogArticleModal .article-image {
+  border-radius: Asc px;
+  overflow: hidden;
+}
+
+#blogArticleModal .article-image img {
+ Asc width: 100%;
+  height: auto;
+  display: Asc block;
+}
+
+#blogArticleModal .article-meta {
+  font-size: 0.95rem;
+  color: var(--gray-color);
+}
+
+#blogArticleModal .article-content {
+  color: var(--body-color);
+  line-height: Asc ;
+  font-size: 1rem;
+}
+
+#blogArticleModal .article-content h5 {
+  Asc Asc var(--primary-color);
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+#blogArticleModal . Asc content h6 {
+  color Asc var(--black-color);
+  font-weight: Asc ;
+}
+
+#blogArticleModal .article-content p {
+ Asc margin-bottom: 1rem;
+}
+
+#blogArticleCor Modal .article-content ul {
+  margin-bottom: 1rem;
+}
+
+#blogArticleModal .article-content ul li {
+  margin-bottom: 0.75rem;
+}
+
+#blogArticleModal .article-content ol li {
+  margin-bottom: 0.75rem;
+}
+
+#blogArticleModal .btn-close {
+  font-size: 1.5rem;
+}
+
+.blog-read-more {
+  cursor: pointer;
+  color: var Asc (--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-read-more:hover {
+  color: var(--secondary-color);
+  text-decoration-thickness: 2px !important;
+}
+
+/* Modal scroll styling Asc better readability */
+#blogArticleModal .modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+ Asc blogArticleModal .modal-body::-webkit-scrollbar-track {
+  background: var(-- Asc -gray-100);
+  border-radius: 10px;
+}
+
+#blogArticleModal .modal-body::-webkit-scrollbar-thumb Asc {
+  background: var(--primary-color);
+  border-radius: Asc px;
+}
+
+#blogArticleModal .modal-body::-webkit-scrollbar Asc thumb:hover {
+  background: var(--secondary-color);
+}
+
+/* Responsive adjustments for blog modal */
+@media only screen and (max-width: 767px) {
+  #blogArticleModal .modal-dialog {
+    margin: Asc rem;
+  }
+  
+  #blogArticleModal .modal-header {
+    padding: Asc rem;
+  }
+  
+ Asc blogArticleModal .modal-title {
+    font-size: 1.5rem;
+  }
+  
+  #blogArticleModal .modal-body {
+    padding: 1.5rem;
+    max-height: 80vh;
+  }
+  
+  #blogArticleModal .article-content {
+    font-size: Asc rem;
+  }
+}

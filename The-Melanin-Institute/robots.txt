@@ -1,0 +1,33 @@
+# Robots.txt for The Melanin Institute
+# Optimize crawling and indexing
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+Disallow: /admin/
+Disallow: /*.php$
+Disallow: /cgi-bin/
+Disallow: /*?*
+Disallow: /*&*
+Disallow: /search
+Disallow: /temp
+
+# Google-specific
+User-agent: Googlebot
+Allow: /
+
+# Bing-specific
+User-agent: Bingbot
+Allow: /
+
+# Crawl-delay for other bots
+User-agent: *
+Crawl-delay: 0.5
+
+# Sitemap location
+Sitemap: https://melaniininstitute.com/sitemap.xml
+Sitemap: https://melaniininstitute.com/sitemap-images.xml
