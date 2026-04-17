@@ -603,7 +603,7 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
           </div>
           <hr class="hr-divider">
           <div class="card-footer">
-            <button type="button" class="btn pricing-btn pricing-btn-secondary membership-join-btn" data-membership-type="Fellow">Join as Medic</button>
+            <button type="button" class="btn pricing-btn pricing-btn-secondary membership-join-btn" data-membership-type="Medic">Join as Medic</button>
           </div>
         </div>
       </div>
@@ -611,8 +611,6 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
   </section>
 <!--Membership Ends-->
 
-
-  
   <!--Contact Begins-->
   <section id="Contact" class="padding-small">
     <div class="container text-center">
@@ -646,6 +644,7 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
   </section>
 <!--Contact Ends-->
 
+<!-- Programs starts -->
   <section id="project" class="padding-small">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
@@ -703,6 +702,7 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
       <div class="swiper-pagination position-relative pt-5"></div>
     </div>
   </section>
+<!-- Programs End -->
 
 <!--FAQs Begins-->
   <section id="faq" class="padding-small">
@@ -765,7 +765,7 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
               </h3>
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
                 <div class="accordion-body pt-0">
-                  New members are paired with senior Fellows based on their clinical interests. The program includes quarterly one-on-one sessions, 
+                 New members are paired with senior Medics based on their clinical interests. The program includes quarterly one-on-one sessions,
                   peer-review circles, and collaborative case study opportunities.
                 </div>
               </div>
@@ -801,11 +801,11 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
           <h6><span class="text-primary">|</span>Blog</h6>
           <h3 class="display-6 fw-semibold">Recent Posts</h3>
         </div>
-        <div>
+      <!--  <div>
           <a href="index.html" class="btn btn-primary btn-slide hover-slide-right">
             <span>Read all blogs</span>
           </a>
-        </div>
+        </div> -->
       </div>
       <div class="row mt-2 mt-md-3">
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
@@ -1326,7 +1326,8 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
           <div>
             <p class="membership-form-eyebrow mb-2">Melanin Institute Membership</p>
             <h5 class="modal-title fw-semibold" id="membershipFormModalLabel">Join The Melanin Institute</h5>
-            <p class="membership-form-intro mb-0">Complete your details first, then continue to the payment page as the next step.</p>
+            <p class="membership-form-intro mb-0">Complete your membership application below.</p>
+
           </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
@@ -1334,10 +1335,10 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
           <div class="membership-selected-tier mb-3">
             Selected Membership: <strong id="selectedMembershipType">Associate</strong>
           </div>
-          <div class="membership-flow-indicator d-flex align-items-center justify-content-between gap-2 mb-4">
-            <div class="membership-flow-step active" id="stepIndicatorOne">1. Application</div>
-            <div class="membership-flow-step" id="stepIndicatorTwo">2. Payment</div>
+          <div class="membership-flow-indicator d-flex align-items-center justify-content-center gap-2 mb-4">
+            <div class="membership-flow-step active w-25 text-center" id="stepIndicatorOne">Application Form</div>
           </div>
+
           <form id="membershipForm" class="membership-form row g-3">
             <div id="membershipFormStepOne" class="row g-3 m-0">
               <div class="col-12">
@@ -1440,72 +1441,15 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
               </div>
 
               <div class="col-12 membership-form-actions d-flex justify-content-end">
-                <button type="button" class="btn btn-primary btn-slide hover-slide-right" id="membershipNextStepBtn">
-                  <span>Next: Payment</span>
-                </button>
-              </div>
-            </div>
-
-            <div id="membershipFormStepTwo" class="row g-3 m-0" style="display: none;">
-              <div class="col-12">
-                <h6 class="membership-form-section-title">Payment Page</h6>
-                <p class="mb-2">You are now on the payment step for your selected membership.</p>
-                <div class="p-4 border rounded mb-4 bank-details-box">
-                  <h6 class="fw-bold mb-3 text-primary">Bank Account Details (Copy &amp; Transfer)</h6>
-                  <div class="row g-3 mb-3">
-                    <div class="col-md-4">
-                      <label class="form-label fw-semibold small text-muted mb-1">Bank Name</label>
-                      <div class="bank-info p-2 bg-light rounded border" id="bankName">[Bank Name - ADD DETAILS]</div>
-                    </div>
-                    <div class="col-md-4">
-                      <label class="form-label fw-semibold small text-muted mb-1">Account Number</label>
-                      <div class="bank-info p-2 bg-light rounded border fw-bold" id="accountNumber">[Account Number - ADD DETAILS]</div>
-                    </div>
-                    <div class="col-md-4">
-                      <label class="form-label fw-semibold small text-muted mb-1">Account Name</label>
-                      <div class="bank-info p-2 bg-light rounded border" id="accountName">The Melanin Institute</div>
-                    </div>
-                  </div>
-                  <div class="text-center">
-                    <small class="text-muted">Make transfer for your membership amount, then proceed below.</small>
-                  </div>
-                </div>
-                <div class="row g-3 mb-3">
-                  <div class="col-md-6">
-                    <p class="mb-2"><strong>Membership:</strong> <span id="selectedMembershipTypePayment">Associate</span></p>
-                    <p class="mb-0 fw-bold fs-5 text-primary"><strong>Amount Due:</strong> <span id="selectedMembershipPrice">₦50,000</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <input type="hidden" id="membershipPaymentMethod" name="payment_method" value="Bank Transfer">
-                <label class="form-label fw-semibold">Payment Method: <span class="badge bg-success">Bank Transfer Only</span></label>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label" for="membershipPaymentDate">Payment Date *</label>
-                <input type="date" class="form-control rounded-0" id="membershipPaymentDate" name="payment_date" required>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label" for="membershipTransactionReference">Transaction Reference *</label>
-                <input type="text" class="form-control rounded-0" id="membershipTransactionReference" name="transaction_reference" required>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label" for="membershipReceipt">Upload Payment Receipt *</label>
-                <input type="file" class="form-control rounded-0" id="membershipReceipt" name="payment_receipt" accept=".jpg,.jpeg,.png,.pdf" required>
-              </div>
-
-              <input type="hidden" id="membershipTypeInput" name="membership_type" value="Associate">
-
-              <div class="col-12 membership-form-actions d-flex justify-content-between flex-wrap gap-2">
-                <button type="button" class="btn btn-outline-secondary" id="membershipPreviousStepBtn">Back</button>
+                <input type="hidden" id="membershipTypeInput" name="membership_type" value="Associate">
                 <button type="submit" class="btn btn-primary btn-slide hover-slide-right">
-                  <span>Submit Membership Form</span>
+                  <span>Submit Membership Application</span>
                 </button>
               </div>
-              <div class="col-12">
-                <p class="membership-form-note mb-0">Form structure copied from your Google Form. Submission wiring can be connected once you send the Google Form field IDs.</p>
-              </div>
+
             </div>
+
+
           </form>
         </div>
       </div>
@@ -1819,50 +1763,28 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
       const membershipFormElement = document.getElementById('membershipForm');
       const membershipTypeInput = document.getElementById('membershipTypeInput');
       const selectedMembershipType = document.getElementById('selectedMembershipType');
-      const selectedMembershipTypePayment = document.getElementById('selectedMembershipTypePayment');
-      const selectedMembershipPrice = document.getElementById('selectedMembershipPrice');
       const membershipFormModalElement = document.getElementById('membershipFormModal');
       const membershipFormStepOne = document.getElementById('membershipFormStepOne');
-      const membershipFormStepTwo = document.getElementById('membershipFormStepTwo');
-      const membershipNextStepBtn = document.getElementById('membershipNextStepBtn');
-      const membershipPreviousStepBtn = document.getElementById('membershipPreviousStepBtn');
-      const stepIndicatorOne = document.getElementById('stepIndicatorOne');
-      const stepIndicatorTwo = document.getElementById('stepIndicatorTwo');
+
 
       if (
         membershipJoinButtons.length &&
         membershipFormElement &&
         membershipTypeInput &&
         selectedMembershipType &&
-        selectedMembershipTypePayment &&
-        selectedMembershipPrice &&
         membershipFormModalElement &&
-        membershipFormStepOne &&
-        membershipFormStepTwo &&
-        membershipNextStepBtn &&
-        membershipPreviousStepBtn &&
-        stepIndicatorOne &&
-        stepIndicatorTwo
+        membershipFormStepOne
       ) {
         const membershipModal = new bootstrap.Modal(membershipFormModalElement);
         const membershipPrices = {
-          Associate: '₦50,000',
+          Associate: '₦20,000',
           Professional: '₦100,000',
-          Fellow: '₦200,000'
+          Medic: '₦100,000'
         };
 
-        const setMembershipStep = (stepNumber) => {
-          const isStepOne = stepNumber === 1;
-          membershipFormStepOne.style.display = isStepOne ? 'flex' : 'none';
-          membershipFormStepTwo.style.display = isStepOne ? 'none' : 'flex';
-          stepIndicatorOne.classList.toggle('active', isStepOne);
-          stepIndicatorTwo.classList.toggle('active', !isStepOne);
-          document.getElementById('membershipFormModalLabel').textContent = isStepOne ? 'Join The Melanin Institute' : 'Membership Payment';
-        };
-
-        const validateStepOne = () => {
-          const stepOneFields = membershipFormStepOne.querySelectorAll('input, select, textarea');
-          for (const field of stepOneFields) {
+        const validateForm = () => {
+          const formFields = membershipFormElement.querySelectorAll('input[required], select[required]');
+          for (const field of formFields) {
             if (!field.checkValidity()) {
               field.reportValidity();
               return false;
@@ -1876,47 +1798,39 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
             const membershipType = this.getAttribute('data-membership-type') || 'Associate';
             membershipTypeInput.value = membershipType;
             selectedMembershipType.textContent = membershipType;
-            selectedMembershipTypePayment.textContent = membershipType;
-            selectedMembershipPrice.textContent = membershipPrices[membershipType] || '₦0';
             membershipFormElement.reset();
-            setMembershipStep(1);
             membershipModal.show();
           });
         });
 
-        membershipNextStepBtn.addEventListener('click', function () {
-          if (!validateStepOne()) {
-            return;
-          }
-          setMembershipStep(2);
-        });
-
-        membershipPreviousStepBtn.addEventListener('click', function () {
-          setMembershipStep(1);
-        });
 
         membershipFormElement.addEventListener('submit', function (event) {
           event.preventDefault();
 
-          const receiptField = document.getElementById('membershipReceipt');
-          if (!receiptField.files || !receiptField.files.length) {
-            receiptField.reportValidity();
+          if (!validateForm()) {
             return;
           }
 
           const submitButton = membershipFormElement.querySelector('[type="submit"]');
+          const originalText = submitButton.innerHTML;
 
           if (submitButton) {
             submitButton.disabled = true;
-            submitButton.innerHTML = '<span>Saving...</span>';
+            submitButton.innerHTML = '<span>Sending...</span>';
           }
 
-          setTimeout(() => {
+          const formData = new FormData(membershipFormElement);
+
+          fetch('send_mail.php', {
+            method: 'POST',
+            body: formData
+          })
+          .then(response => response.text())
+          .then(() => {
             if (submitButton) {
               submitButton.disabled = false;
-              submitButton.innerHTML = '<span>Submit Membership Form</span>';
+              submitButton.innerHTML = originalText;
             }
-
             membershipModal.hide();
 
             const alertDiv = document.createElement('div');
@@ -1929,14 +1843,41 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
             alertDiv.style.boxShadow = '0 5px 18px rgba(0,0,0,0.2)';
             alertDiv.style.color = '#fff';
             alertDiv.style.backgroundColor = '#28a745';
-            alertDiv.textContent = 'Membership form and payment step captured. Google Form submission wiring will be added when field IDs are provided.';
+alertDiv.textContent = 'Thank you! Your membership application has been submitted successfully. It will be reviewed within 48 hours.';
             document.body.appendChild(alertDiv);
 
             setTimeout(() => {
               alertDiv.remove();
             }, 5000);
-          }, 400);
+
+            membershipFormElement.reset();
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            const alertDiv = document.createElement('div');
+            alertDiv.style.position = 'fixed';
+            alertDiv.style.top = '1rem';
+            alertDiv.style.right = '1rem';
+            alertDiv.style.zIndex = '9999';
+            alertDiv.style.padding = '1rem 1.2rem';
+            alertDiv.style.borderRadius = '0.45rem';
+            alertDiv.style.boxShadow = '0 5px 18px rgba(0,0,0,0.2)';
+            alertDiv.style.color = '#fff';
+            alertDiv.style.backgroundColor = '#dc3545';
+            alertDiv.textContent = 'Error submitting form. Please try again.';
+            document.body.appendChild(alertDiv);
+
+            setTimeout(() => {
+              alertDiv.remove();
+            }, 5000);
+
+            if (submitButton) {
+              submitButton.disabled = false;
+              submitButton.innerHTML = originalText;
+            }
+          });
         });
+
 
         membershipFormModalElement.addEventListener('hidden.bs.modal', function () {
           membershipFormElement.reset();
