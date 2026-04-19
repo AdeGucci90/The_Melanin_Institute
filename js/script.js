@@ -145,6 +145,26 @@
       });
 
     });
+    // Mobile Menu Fixes: Auto-close offcanvas + smooth scroll handler
+    $(document).on('click', '#bdNavbar .nav-link[href^="#"]', function(e) {
+      e.preventDefault();
+      
+      const targetId = $(this).attr('href');
+      const $target = $(targetId);
+      
+      if ($target.length) {
+        $('html, body').animate({
+          scrollTop: $target.offset().top - 100 // Offset for fixed header
+        }, 800, 'swing');
+      }
+      
+      // Close offcanvas
+      const offcanvas = bootstrap.Offcanvas.getInstance(document.getElementById('bdNavbar'));
+      if (offcanvas) {
+        offcanvas.hide();
+      }
+    });
+
     // Smart Sticky Header
     var lastScrollTop = 0;
     var $header = $('#header');
