@@ -1,16 +1,12 @@
 {
-  "title": "About The Melanin Institute",
+  "title": "The Melanin Institute",
   "image": "images/About_us.png",
   "sections": [
-    {
-      "heading": "Our Mission",
-      "body": "The Melanin Institute is a global professional body dedicated to advancing skin-of-color dermatology and aesthetic medicine through education, mentorship, research and collaboration."
-    },
     {
       "heading": "What We Offer",
       "list": [
         "Continuing education programs with certifications",
-        "Strategic networking across Nigeria, Canada and international partners",
+        "Strategic networking globally",
         "Professional mentoring and clinical case review",
         "Resources for inclusive practice standards and safer device use",
         "Research collaborations and publishing opportunities"
@@ -18,7 +14,7 @@
     },
     {
       "heading": "Why It Matters",
-      "body": "Certain protocols and technologies that work for lighter skin tones can carry serious risk when applied to deeper pigments. We close this gap by providing focused expertise and clinician support to improve safety, effectiveness and patient satisfaction."
+      "body": "Certain protocols and technologies for lighter skin types may not work on melenated skin and may pose a risk to deeper skin tones. We close this gap by providing research and evidence-based education and mentoring from experts to align with modern-day aesthetics globally."
     }
   ]
 }
