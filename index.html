@@ -132,8 +132,8 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
 </style>
 
 <!-- Preload Critical Resources (LCP + Fonts) -->
-<link rel="preload" href="images/Hero1.png" as="image" fetchpriority="high">
-<link rel="preload" href="images/logo_new.png" as="image" fetchpriority="high">
+<link rel="preload" href="/images/Hero1.png" as="image" fetchpriority="high">
+<link rel="preload" href="/images/logo_new.png" as="image" fetchpriority="high">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300..700;1,400..600&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300..700;1,400..600&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -141,13 +141,13 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
 <!-- Non-critical CSS (async/defer via media) -->
-<link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
-<link rel="preload" href="css/vendor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="css/vendor.css"></noscript>
+<link rel="preload" href="/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/bootstrap.min.css"></noscript>
+<link rel="preload" href="/css/vendor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/vendor.css"></noscript>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-<link rel="icon" type="image/png" href="images/favicon.png"><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="/style.css" media="print" onload="this.media='all'">
+<link rel="icon" type="image/png" href="/images/favicon.png"><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -304,7 +304,7 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
       <div class="container">
         <div class="d-flex justify-content-between align-items-center py-3">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo_new.png" class="logo img-fluid" loading="lazy">
+<img src="/images/logo_new.png" class="logo img-fluid" loading="lazy" width="160" height="60" loading="lazy" decoding="async">
           </a>
           <ul class="info d-flex flex-wrap justify-content-end align-items-center list-unstyled m-0">
             <li class="phone text-black fw-medium text-capitalize d-flex align-items-center ms-4">
@@ -421,7 +421,7 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-6" data-aos="fade-left" data-aos-delay="500">
-        <img src="images/Hero1.png" alt="img" class="img-fluid w-100" loading="lazy">
+<img src="/images/Hero1.png" alt="Hero image" class="img-fluid w-100" loading="eager" decoding="async" width="900" height="600">
       </div>
     </div>
   </section>
@@ -433,7 +433,7 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
       <div class="row g-md-5 align-items-center">
         <div class="col-lg-5" data-aos="fade-right">
           <div class="imageblock position-relative">
-            <img class="img-fluid" src="images/About_us.png" alt="img" loading="lazy">
+<img class="img-fluid" src="/images/About_us.png" alt="About The Melanin Institute" loading="lazy" decoding="async" width="640" height="420">
          <!--   <div class="video-player position-absolute top-50 start-50 translate-middle">
               <a type="button" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/W_tIumKa8VY"
                 data-bs-target="#myModal" class="play-btn position-relative">
@@ -1467,7 +1467,7 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-0">
-          <iframe src="Melanin_Institute_Benefits.html" style="width:100%; height:75vh; border:none;" title="Membership Benefits Guide"></iframe>
+<iframe src="/Melanin_Institute_Benefits.html" style="width:100%; height:75vh; border:none;" title="Membership Benefits Guide"></iframe>
         </div>
       </div>
     </div>
@@ -1480,11 +1480,11 @@ h6 { font-weight: 500; text-transform: uppercase; letter-spacing: 0.3rem; }
   </button>
 
   <!-- Optimized Script Loading -->
-  <script src="js/jquery-1.11.0.min.js" defer></script>
-  <script type="text/javascript" src="js/bootstrap.bundle.min.js" defer></script>
-  <script type="text/javascript" src="js/plugins.js" defer></script>
+<script src="/js/jquery-1.11.0.min.js" defer></script>
+<script type="text/javascript" src="/js/bootstrap.bundle.min.js" defer></script>
+<script type="text/javascript" src="/js/plugins.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
-  <script type="text/javascript" src="js/script.js" defer></script>
+<script type="text/javascript" src="/js/script.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" async></script>
 
